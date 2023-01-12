@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
@@ -12,8 +12,11 @@ export class MessageDialogComponent implements OnInit {
   constructor(public messageDialogRef: MatDialogRef<MessageDialogComponent>) {}
   public ngOnInit() {
     this.messageForm = new FormGroup({
-      name: new FormControl(''),
-      message: new FormControl(''),
+      name: new FormControl('', Validators.required),
+      message: new FormControl('', [
+        Validators.required,
+        Validators.minLength(5),
+      ]),
     });
   }
   public onClose(): void {

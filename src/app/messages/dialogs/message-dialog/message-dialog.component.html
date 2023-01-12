@@ -18,6 +18,14 @@
         type="text"
         placeholder="Enter message"
       ></textarea>
+      <mat-error
+        class="error-label"
+        *ngIf="
+          messageForm.controls['message'].hasError('minlength') &&
+          !messageForm.controls['message'].hasError('required')
+        "
+        >Message should contain at least 5 symbols</mat-error
+      >
     </mat-form-field>
     <button mat-button class="submit-button">Submit</button>
   </form>

@@ -18,6 +18,10 @@
     flex-direction: column;
     align-items: stretch;
     padding: 0 1rem;
+
+    & .error-label {
+      text-align: center;
+    }
   }
 
   @media screen and (max-width: 650px) {
