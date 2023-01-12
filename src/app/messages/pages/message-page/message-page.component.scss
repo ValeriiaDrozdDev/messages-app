@@ -1,0 +1,27 @@
+div {
+  button {
+    margin: 2rem;
+    padding: 1.5rem;
+    background-color: rgb(170, 165, 165);
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: background 0.7s ease;
+    &:hover {
+      background-color: rgb(252, 160, 68);
+    }
+  }
+  app-message-table {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  h1 {
+    padding: 1rem;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 3.5rem;
+    color: rgb(43, 40, 40);
+    margin: 0.5rem 0;
+  }
+}

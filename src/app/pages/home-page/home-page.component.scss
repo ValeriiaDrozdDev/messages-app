@@ -1,0 +1,43 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+div {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(43, 40, 40);
+  align-items: center;
+  padding: 1rem 0;
+  height: auto;
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    color: rgb(247, 230, 198);
+    margin-top: 2rem;
+  }
+
+  button {
+    margin: 1rem 0;
+    padding: 1.5rem;
+    background-color: rgb(247, 230, 198);
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: background 0.7s ease;
+    &:hover {
+      background-color: rgb(252, 160, 68);
+    }
+  }
+
+  img {
+    margin-top: 1rem;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 0.25rem;
+  }
+}

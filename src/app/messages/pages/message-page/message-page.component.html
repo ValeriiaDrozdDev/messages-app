@@ -1,0 +1,6 @@
+<div>
+  <app-spinner *ngIf="loading$ | async"></app-spinner>
+  <h1>Here you can find messages</h1>
+  <button (click)="onClick()" mat-button>Add message</button>
+  <app-message-table></app-message-table>
+</div>

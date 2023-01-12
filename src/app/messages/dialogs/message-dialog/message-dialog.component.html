@@ -1,0 +1,27 @@
+<div class="dialog-block">
+  <h1>Add Message</h1>
+  <form [formGroup]="messageForm" (submit)="onSubmit()">
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input
+        matInput
+        formControlName="name"
+        type="text"
+        placeholder="Enter name"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Message</mat-label>
+      <textarea
+        matInput
+        formControlName="message"
+        type="text"
+        placeholder="Enter message"
+      ></textarea>
+    </mat-form-field>
+    <button mat-button class="submit-button">Submit</button>
+  </form>
+  <button (click)="onClose()" class="close-button" mat-icon-button>
+    <mat-icon fontIcon="cancel"></mat-icon>
+  </button>
+</div>

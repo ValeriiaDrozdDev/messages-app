@@ -1,0 +1,26 @@
+tr.message-detail-row {
+  height: 0;
+}
+.message-element-detail {
+  overflow: hidden;
+  display: flex;
+  gap: 1rem;
+  height: 2rem;
+}
+.message-element-row td {
+  border-bottom-width: 0;
+}
+
+.detail-name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.detail-message {
+  font-size: 1rem;
+}
+
+.name-cell {
+  word-wrap: break-word;
+  word-break: break-all;
+}
